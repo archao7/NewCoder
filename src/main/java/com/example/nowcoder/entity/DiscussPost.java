@@ -5,7 +5,7 @@ import java.util.Date;
 public class DiscussPost {
 
     private int id;
-    private String userId;
+    private int userId;
     private String title;
     private String content;
     private int type;
@@ -21,11 +21,11 @@ public class DiscussPost {
         this.id = id;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 

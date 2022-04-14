@@ -6,6 +6,8 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserMapper {
 
+    //都是和resource下xml对应的sql方法;
+    //service调用dao层，并不一定是说每个方法都对应，而是service里的逻辑会用到这些方法
     User selectById(int id);
 
     User selectByName(String username);

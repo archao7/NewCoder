@@ -23,7 +23,7 @@ public class HomeController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String getHomePage(Model model, Page page){
         //spring会自动实例化model和page，也会自动装到model里
         //所以thymeleaf可以直接访问page对象中的数据

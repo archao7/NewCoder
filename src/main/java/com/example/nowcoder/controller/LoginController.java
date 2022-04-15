@@ -37,7 +37,7 @@ public class LoginController implements CommunityConstant {
         return "/site/register";
     }
 
-    @RequestMapping(path = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String getLoginPage() {
         return "/site/login";
     }
@@ -92,5 +92,8 @@ public class LoginController implements CommunityConstant {
             logger.error("响应验证码失败:" + e.getMessage());
         }
     }
+
+//    @RequestMapping(value = "/login", method = RequestMethod.POST)
+
 
 }

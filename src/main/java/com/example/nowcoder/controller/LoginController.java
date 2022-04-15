@@ -4,7 +4,9 @@ import com.google.code.kaptcha.Producer;
 import com.example.nowcoder.entity.User;
 import com.example.nowcoder.service.UserService;
 import com.example.nowcoder.util.CommunityConstant;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.imageio.ImageIO;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
@@ -31,6 +34,9 @@ public class LoginController implements CommunityConstant {
     private Producer kaptchaProducer;
 
     private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+
+    @Value("${server.servlet.context-path}")
+    private String contextPath;
 
     @RequestMapping(path = "/register", method = RequestMethod.GET)
     public String getRegisterPage() {
@@ -74,6 +80,7 @@ public class LoginController implements CommunityConstant {
         return "/site/operate-result";
     }
 
+    //是给前端访问的路由
     @RequestMapping(path = "/kaptcha", method = RequestMethod.GET)
     public void getKaptcha(HttpServletResponse response, HttpSession session) {
         // 生成验证码
@@ -93,7 +100,45 @@ public class LoginController implements CommunityConstant {
         }
     }
 
-//    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    //这些参数的名字就对应前端login.html里post表的name值,嘿嘿,被我发现了
+    //也就是说服务器调用这个函数后，会自动注入对应参数
+    public String login(String username, String password, String code,
+                        boolean rememberme, Model model, HttpSession session,
+                        HttpServletResponse response){
+
+        //检查验证码
+        String kaptcha = (String) session.getAttribute("kaptcha");
+        if(StringUtils.isBlank(kaptcha) || StringUtils.isBlank(code)
+                || !kaptcha.equalsIgnoreCase(code)){
+            model.addAttribute("codeMsg", "验证码不正确");
+            return "/site/login";
+        }
+
+        //检查账号，密码
+        int expiredSeconds = rememberme ? REMEMBER_EXPIRED_SECONDS : DEFAULT_EXPIRED_SECONDS;
+
+        Map<String, Object> map = userService.login(username, password,expiredSeconds);
+        if(map.containsKey("ticket")){ //账号密码正确
+            //将ticket取出来，存到cookie
+            Cookie cookie = new Cookie("ticket", (String) map.get("ticket"));
+            cookie.setPath(contextPath);
+            cookie.setMaxAge(expiredSeconds);
+
+            response.addCookie(cookie);
+
+            //待会试试直接return /index,感觉也可以
+//            return "/index";
+            return "redirect:/index";
+        }else { //错误
+            model.addAttribute("usernameMsg", map.get("usernameMsgs"));
+            model.addAttribute("passwordMsg", map.get("passwordMsg"));
+
+//            return "redirect:/login";
+            return "/site/login";
+        }
+
+    }
 
 
 }

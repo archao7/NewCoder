@@ -14,4 +14,6 @@ public interface DiscussPostMapper {
     //@Param()用于给参数取别名；
     // 如果sql语句要用到参数并且函数只有一个参数时，必须要取别名，否则出错
     int selectDiscussPostRows(@Param("userId") int userId);
+
+    int insertDiscussPost(DiscussPost discussPost);
 }

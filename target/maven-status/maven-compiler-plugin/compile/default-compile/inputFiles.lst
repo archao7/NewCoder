@@ -3,10 +3,12 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/MailClient.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/LoginTicketInterceptor.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CookieUtil.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Comment.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/UserService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/AlphaInterceptor.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/LoginRequiredInterceptor.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/config/KaptchaConfig.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/CommentController.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/LoginTicketMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/DiscussPost.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/HomeController.java
@@ -21,6 +23,8 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/DiscussPostService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/UserController.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CommunityUtil.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/CommentMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Page.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/CommentService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/LoginTicket.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/NowCoderApplication.java

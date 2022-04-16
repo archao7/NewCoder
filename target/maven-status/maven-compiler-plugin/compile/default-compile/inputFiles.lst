@@ -13,6 +13,7 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/LoginController.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CommunityConstant.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/DiscussPostMapper.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/DiscussPostController.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/User.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/SensitiveFilter.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/HostHolder.java

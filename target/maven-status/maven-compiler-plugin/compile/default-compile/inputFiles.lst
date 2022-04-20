@@ -1,11 +1,14 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/annotation/LoginRequired.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/UserMapper.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/MessageMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/MailClient.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/LoginTicketInterceptor.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CookieUtil.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/MessageService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Comment.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/UserService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/AlphaInterceptor.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/MessageController.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/LoginRequiredInterceptor.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/config/KaptchaConfig.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/CommentController.java
@@ -22,6 +25,7 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/config/WebMvcConfig.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/DiscussPostService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/UserController.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Message.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CommunityUtil.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/CommentMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Page.java

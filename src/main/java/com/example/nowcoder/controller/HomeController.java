@@ -4,6 +4,7 @@ import com.example.nowcoder.entity.DiscussPost;
 import com.example.nowcoder.entity.Page;
 import com.example.nowcoder.entity.User;
 import com.example.nowcoder.service.DiscussPostService;
+import com.example.nowcoder.service.LikeService;
 import com.example.nowcoder.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.*;
 
+import static com.example.nowcoder.util.CommunityConstant.ENTITY_TYPE_POST;
+
 @Controller
 public class HomeController {
 
@@ -22,6 +25,9 @@ public class HomeController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private LikeService likeService;
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String getHomePage(Model model, Page page){
@@ -43,6 +49,10 @@ public class HomeController {
                 map.put("post", discussPost);
                 User user = userService.findUserById(discussPost.getUserId());
                 map.put("user", user);
+
+                long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, discussPost.getId());
+                map.put("likeCount", likeCount);
+
                 discussPosts.add(map);
             }
         }

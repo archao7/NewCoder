@@ -1,7 +1,6 @@
 package com.example.nowcoder.config;
 
 import com.example.nowcoder.controller.interceptor.AlphaInterceptor;
-//import com.example.nowcoder.controller.interceptor.LoginRequiredInterceptor;
 import com.example.nowcoder.controller.interceptor.LoginRequiredInterceptor;
 import com.example.nowcoder.controller.interceptor.LoginTicketInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;

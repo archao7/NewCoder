@@ -2,12 +2,14 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/annotation/LoginRequired.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/config/RedisConfig.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/UserMapper.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/FollowService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/MessageMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/MailClient.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/LikeService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/LoginTicketInterceptor.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CookieUtil.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/MessageService.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/FollowController.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Comment.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/UserService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/AlphaInterceptor.java

@@ -10,6 +10,7 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CookieUtil.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/MessageService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/FollowController.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/event/EventProducer.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Comment.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/UserService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/AlphaInterceptor.java
@@ -27,6 +28,7 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/DiscussPostMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/aspect/AlphaAspect.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/DiscussPostController.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/event/EventConsumer.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/User.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/SensitiveFilter.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/HostHolder.java
@@ -38,6 +40,7 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/CommentMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/RedisKeyUtil.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Page.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Event.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/CommentService.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/LoginTicket.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/NowCoderApplication.java

@@ -39,6 +39,7 @@
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/CommunityUtil.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/dao/CommentMapper.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/util/RedisKeyUtil.java
+/home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/controller/interceptor/MessageInterceptor.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Page.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/entity/Event.java
 /home/arches/IdeaProjects/NowCoder/src/main/java/com/example/nowcoder/service/CommentService.java
